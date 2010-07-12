@@ -1,0 +1,15 @@
+C:\Sandbox\WikiWorld\WikiWorld.Core\bin\Debug\log4net.dll
+C:\Sandbox\WikiWorld\WikiWorld.Core\bin\Debug\log4net.xml
+C:\Sandbox\WikiWorld\WikiWorld.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Sandbox\WikiWorld\WikiWorld.Core\bin\Debug\XpertSquare.Core.dll
+C:\Sandbox\WikiWorld\WikiWorld.Core\bin\Debug\XpertSquare.Core.pdb
+C:\Sandbox\WikiWorld\WikiWorld.Core\obj\Debug\XpertSquare.Core.dll
+C:\Sandbox\WikiWorld\WikiWorld.Core\obj\Debug\XpertSquare.Core.pdb
+C:\Sandbox\XpertSquare\XpertSquare.Core\bin\Debug\XpertSquare.Core.dll
+C:\Sandbox\XpertSquare\XpertSquare.Core\bin\Debug\XpertSquare.Core.pdb
+C:\Sandbox\XpertSquare\XpertSquare.Core\bin\Debug\log4net.dll
+C:\Sandbox\XpertSquare\XpertSquare.Core\bin\Debug\Lucene.Net.dll
+C:\Sandbox\XpertSquare\XpertSquare.Core\bin\Debug\log4net.xml
+C:\Sandbox\XpertSquare\XpertSquare.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Sandbox\XpertSquare\XpertSquare.Core\obj\Debug\XpertSquare.Core.dll
+C:\Sandbox\XpertSquare\XpertSquare.Core\obj\Debug\XpertSquare.Core.pdb

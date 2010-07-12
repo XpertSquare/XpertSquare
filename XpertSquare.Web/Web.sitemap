@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url=""
+      title="Home"
+      description="The Home Page">    
+    <siteMapNode
+       url="~/users"
+       title="Users"
+       description="System users" />
+    <siteMapNode
+       url="~/tags"
+       title="Tags"
+       description="System tags" />
+    <siteMapNode
+      url="~/questions"
+      title="Questions"
+      description="All questions" />    
+    <siteMapNode
+       url="~/questions/create"
+       title="Ask a question"
+       description="Ask a question" />
+    <siteMapNode
+        url="~/Home/About"
+        title="About"
+        description="About Us" />
+  </siteMapNode>
+</siteMap>

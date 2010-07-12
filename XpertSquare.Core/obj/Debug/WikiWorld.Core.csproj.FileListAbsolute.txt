@@ -1,0 +1,7 @@
+C:\Sandbox\WikiWorld\WikiWorld.Core\bin\Debug\WikiWorld.Core.dll
+C:\Sandbox\WikiWorld\WikiWorld.Core\bin\Debug\WikiWorld.Core.pdb
+C:\Sandbox\WikiWorld\WikiWorld.Core\bin\Debug\log4net.dll
+C:\Sandbox\WikiWorld\WikiWorld.Core\bin\Debug\log4net.xml
+C:\Sandbox\WikiWorld\WikiWorld.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Sandbox\WikiWorld\WikiWorld.Core\obj\Debug\WikiWorld.Core.dll
+C:\Sandbox\WikiWorld\WikiWorld.Core\obj\Debug\WikiWorld.Core.pdb
