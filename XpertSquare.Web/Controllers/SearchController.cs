@@ -40,10 +40,10 @@ namespace XpertSquare.Web.Controllers
 
         
         [ValidateInput(false)]        
-        public ActionResult Search(String q, int? pg)
+        public ActionResult Search(String q, int? page)
         {
 
-            Int32 currentPage = pg ?? 1;
+            Int32 currentPage = page ?? 1;
 
             SearchResultViewModel searchResult = new SearchResultViewModel() 
             { 

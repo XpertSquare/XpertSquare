@@ -13,7 +13,7 @@ namespace XpertSquare.Web.Core
         public static String SITE_TITLE = "XpertSquare";
         //Users page settings
         public static Int16 USERS_PAGINATION_SIZE = 30;
-        public static Int16 QUESTIONS_PAGINATION_SIZE = 20;
+        public static Int16 QUESTIONS_PAGINATION_SIZE = 2;
         public static Int16 USERS_PAGINATION_COLUMNS = 5;
         //Tags page settings
         public static Int16 TAGS_PAGINATION_SIZE = 30;

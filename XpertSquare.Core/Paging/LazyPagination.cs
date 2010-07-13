@@ -61,7 +61,7 @@ namespace XpertSquare.Core
                 return;
 
             totalItems = Query.Count();
-            results = ExecuteQuery();
+            results = ExecuteQuery();            
         }
 
         /// <summary>
@@ -71,6 +71,11 @@ namespace XpertSquare.Core
         protected virtual IList<T> ExecuteQuery()
         {
             int numberToSkip = (PageNumber - 1) * PageSize;
+            if (Query.Count() < numberToSkip)
+            {
+                PageNumber = 1;
+                numberToSkip = 0;
+            }
             return Query.Skip(numberToSkip).Take(PageSize).ToList();
         }
 

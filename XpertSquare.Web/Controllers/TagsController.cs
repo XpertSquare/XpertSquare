@@ -43,10 +43,10 @@ namespace XpertSquare.Web.Controllers
          //
          // GET: /Tags/
 
-         public ActionResult Index(int? pg)
+         public ActionResult Index(int? page)
         {
 
-            Int32 currentPage = pg ?? 1;
+            Int32 currentPage = page ?? 1;
             IQueryable<XsTag> tags = tagRepository.GetTagsByQuestionTotal().AsQueryable();
             IPagination pageTags = tags.AsPagination(currentPage, Settings.TAGS_PAGINATION_SIZE);
 

@@ -66,19 +66,17 @@ namespace XpertSquare.Controllers
         //
         // GET: /Questions/
 
-         public ActionResult Index(int? pg)
+         public ActionResult Index(int? page)
          {
 
-             Int32 currentPage = pg ?? 1;
+             Int32 currentPage = page ?? 1;
              IQueryable<XsQuestion> questions =
                  from question in questionRepository.GetAll()
                  orderby question.UpdateDT descending
                  select question;
 
              IPagination pageQuestions = questions.AsPagination(currentPage, Settings.QUESTIONS_PAGINATION_SIZE);
-             Int32 currentPageSize = Settings.QUESTIONS_PAGINATION_SIZE;
-
-             if (pg > pageQuestions.TotalPages) pg = 1;
+             Int32 currentPageSize = Settings.QUESTIONS_PAGINATION_SIZE;             
 
              if (currentPage == pageQuestions.TotalPages)
              {
@@ -395,9 +393,9 @@ namespace XpertSquare.Controllers
             return View(questionToSave);
         }
 
-        public ActionResult Tagged(String tag, int? pg)
+        public ActionResult Tagged(String tag, int? page)
         {
-            Int32 currentPage = pg ?? 1;            
+            Int32 currentPage = page ?? 1;            
             IPagination questionsTagged = null;
             XsTag questionTag = null;
 
