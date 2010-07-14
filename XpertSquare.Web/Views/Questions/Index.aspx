@@ -26,14 +26,8 @@
                 
             <%foreach(var tag in Model.PopularTags){ %>
                 <tr>
-                    <td>
-                    <%=Html.ActionLink( 
-                        tag.Name
-                        , "Tagged"
-                        , "Questions"
-                        , new { tag = Uri.EscapeDataString(tag.Name) }
-                        , new { @class="post-tag", title="Show questions tagged '" + tag.Name +"'", rel="tag"}
-                    )%>
+                
+                    <td> <a href="<%=WebUtils.UrlEncodeUnsafeChars(Url.Action("Tagged","Questions",new {tag = tag.Name}))%>" class="post-tag" title="<%=String.Concat("Show questions tagged '", tag.Name ,"'")%>"><%=tag.Name%></a>
                     <span class="item-multiplier">x&nbsp;<%=tag.QuestionCount %></span> 
                     </td>
                 </tr>    

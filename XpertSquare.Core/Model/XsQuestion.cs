@@ -111,9 +111,30 @@ namespace XpertSquare.Core.Model
                 {
                     yield return new RuleViolation("Each tag cannot be longer than 30 characters", "Tags");
                 }
+                if (!IsValidTag(tag.Name))
+                {
+                    yield return new RuleViolation("Each tag must have only the characters [a..z 0..9 + - # .]", "Tags");
+                }
             }
 
             yield break;
+        }
+
+        private bool IsValidTag(String tag)
+        {
+            bool isValid = true;
+            char[] validChars = { '0','1','2','3','4','5','6','7','8','9', 
+                                    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x','y','w', 'z', 
+                                    '.', '#', '-', '+' };
+            foreach (char tagChar in tag)
+            {
+                if (-1 == Array.IndexOf(validChars, tagChar))
+                {
+                    isValid = false;
+                    break;
+                }
+            }
+            return isValid;
         }
 
         public virtual void RemoveAllTags()

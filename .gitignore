@@ -8,6 +8,7 @@ bin/
 Bin/
 obj/
 Obj/
+LuceneIndex/
 *.suo
 *.sln.cache
 _Resharper.*/
